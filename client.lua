@@ -16,7 +16,13 @@ RegisterCommand("close", function()
     closePage()
 end)
 
-RegisterNUICallback("fivem-react-boilerplate", function(data, cb)
+RegisterNUICallback("exit_focus", function(data, cb)
+    SetNuiFocus(false, false)
+    cb({ })
+    print("This is call !");
+end)
+
+RegisterNUICallback("test_react", function(data, cb)
     SetNuiFocus(false, false)
     cb({ })
 end)
