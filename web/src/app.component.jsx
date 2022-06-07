@@ -6,7 +6,7 @@ export function App() {
   const [hidden, setHidden] = useState(true);
   const closePage = () => {
     setHidden(true);
-    Nui.send("fivem-react-boilerplate", {});
+    Nui.send("exit_focus", {});
   };
 
   window.addEventListener("keydown", (event) => {
