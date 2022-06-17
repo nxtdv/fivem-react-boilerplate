@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Nui } from "./utils/nui.component";
-import "./app.scss";
+import "./App.scss";
 
 export function App() {
   const [hidden, setHidden] = useState(true);
